@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илона Демирчян](https://up.htmlacademy.ru/htmlcss/28/user/1427203).
-* Наставник: [Владислав Кривокора] (https://htmlacademy.ru/profile/krivokora).
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
