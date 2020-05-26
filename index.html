@@ -11,7 +11,9 @@
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
+          <a href="index.html" alt="Home"> 
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Home">
+          </a>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -24,7 +26,7 @@
           <img src="img/background-photo.jpg" width="1200" height="509" alt="Foto-sedona">
         </a>
         <h1>Седона</h1>
-        <h2>Седона-небольшой городок в Аризоне,заслуживающий большего!</h2>
+        <h2>Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
         <section>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <!--Здесь будут причины с картинками-->
@@ -38,8 +40,28 @@
 
         <section>
              <button type="button">Поиск гостиницы в Седоне</button>
-        <!--Здесь будет поисковая форма и карта-->
-          <button type="button">Найти</button>
+             <form action="https://echo.htmlacademy.ru" method="GET">
+              <p>
+              <label for="date-check-in">Дата заезда:</label>
+              <input type="text" name="date" id="date-check-in" placeholder="24 апреля 2017">
+              </p>
+              <p>
+                <label for="date-check-out">Дата выезда:</label>
+                <input type="text" name="date" id="date-check-out" placeholder="4 июля 2017">
+              </p>
+              <p>
+                <label>Взрослые:</label>
+                <input type="button" value="-" placeholder="2">
+                <input type="button" value="+">
+              </p>
+              <p>
+                <label>Дети:</label>
+                <input type="button" value="-" placeholder="0">
+                <input type="button" value="+">
+              </p>
+              <button type="submit">Найти</button>
+             </form>
+        <!--Здесь будет карта-->
 
         </section>
         
@@ -57,16 +79,26 @@
 
           <ul>
             
-              <li><a href="#">twitter</a></li>
-              <li><a href="#">fb-icon</a></li>
-              <li><a href="#">youtube</a></li>
-        
-          </ul>
-
-              <div>
-                <p>Website by</p>
-                <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HtmlAcademy"></a>
-              </div>
+            <li>
+              <a href="https://twitter.com">
+              <img src="img/twitter.svg" width="17" height="17" alt="twitter"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com">
+              <img src="img/facebook.svg" width="12" height="22" alt="facebook"></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com">
+              <img src="img/youtube.svg" width="20" height="16" alt="youtube"></a>
+            </li>
+      
+        </ul>
+      
+            <div>
+              <p>Website by</p>
+              <a href="https://htmlacademy.ru">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HtmlAcademy"></a>
+            </div>
 
       </footer>
 
