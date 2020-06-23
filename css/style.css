@@ -1,0 +1,136 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-dark-grey: #333333;
+    --basic-grey: #666666;
+    --basic-light-grey: #a9a9a9;
+    --basic-dark-blue: #5496bd;
+    --basic-blue: #669ec0;
+    --basic-light-blue: #81b3d2;
+    --basic-dark-brown: #503e33;
+    --basic-brown: #604e43;
+    --basic-light-brown: #766357;
+
+    --background-dark-grey: #eeeeee;
+    --background-grey: #ebebeb;
+    --background-light-grey: #f2f2f2;
+
+    --special-icon: #cacaca;
+    --special-academy: #bdbbbc;
+}
+
+/* Global */
+
+body {
+    min-width: 1220;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("img/background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+.main-navigation-wrapper {
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-white);
+}
+
+.site-navigation a {
+    color: var(--basic-black);
+    font-weight: bold;
+}
+
+.site-navigation a:hover {
+    color: var(--basic-light-blue);
+}
+
+.site-navigation a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+
+
+
+/* Main footer */
+
+.main-footer {
+color: var(--basic-black);
+background-color: rgba(255, 255, 255, 0.9);
+background-image: url("img/map.jpg");
+
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-tel {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Social button */
+
+.social-button {
+    color: inherit;
+}
+
+.social-button:hover {
+    background-color: var(--basic-blue);
+}
+
+.social-button:focus {
+    background-color: var(--basic-dark-blue);
+    opacity: 0.3;
+}
+
+.footer-copyright{
+    font-size: 14px;
+}
+
+.footer-copyright .button:hover {
+    color: var(--basic-light-blue);
+}
+
+.footer-copyright .button:focus {
+    color: var(--special-academy);
+}
