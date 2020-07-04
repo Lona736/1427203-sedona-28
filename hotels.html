@@ -18,14 +18,98 @@
           <img src="logo-sedona.svg" width="138" height="70" alt="Home" class="main-header-logo">
           </a>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="hotels.html" class="active-page">Гостиницы</a></li>
         </ul>
       </nav>
-  
-      </header>
+    </header>
       <main>
-          <h1>Фильтры гостиниц</h1>
-          <!--Здесь будут фильтры-->
+          <h1 class="visually-hidden">Фильтры для поиска гостиниц</h1>
+          
+          <section class="filters container">
+            <h2 class="visually-hidden">Фильтры гостиниц</h2>
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+              <fieldset class="infrastructure">
+                <legend>Инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                    <label for="filter-wi-fi">wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="housing">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label> 
+                  </li>
+                  <li>
+                    <input type="checkbox" name="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="apartaments" id="filter-apartaments" checked>
+                    <label for="filter-apartaments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+
+            <form method="GET" action="https://echo.htmlacademy.ru">
+              <fieldset class="price-item">
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="range-filter">
+                  <div class="price-controls">
+                    <input type="number" name="min-price" value="0">
+                    <label class="min-price">от</label>
+                    <input type="number" name="max-price" value="3000">
+                    <label class="max-price">до</label>
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                </div> 
+              </fieldset>
+            </form>
+          </section>
+
+          <section class="sorting container">
+            <h2>Найдено: 3</h2>
+            <h3>Сортировка:</h3>
+            <ul>
+              <li class="sorting-price">
+                <button type="button">по цене</button>
+              </li>
+              <li class="sorting-item">
+                <button type="button">по типу</button>
+              </li>
+              <li class="sorting-item">
+                <button type="button">по рейтингу</button> 
+              </li>
+            </ul>
+              <span class="sorting-buttons">
+                <button type="button" class="sorting-button-up">
+                  <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="sorting-botton-up">
+                </button>
+                <button type="button" class="sorting-button-down">
+                  <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="sorting-button-down"> 
+                </button>
+              </span>
+          </section>
+
 
           <ul class="hotels">
               <li class="hotel-item"> 
@@ -99,16 +183,15 @@
           </ul>
 
         <footer class="main-footer">
-          <div>
+          <div class="container">
             <p class="footer-tel">
               #visitsedona
               <a href="tel:+7(495)666-01-66">тел: +7(495)666-01-66</a>
             </p>
           </div>
-  
 
-            <ul class="footer-social">
-              
+          <section class="footer-social">
+            <ul>
                 <li>
                   <a class="social-button" href="https://twitter.com">
                   <img src="img/twitter.svg" width="17" height="17" alt="twitter"></a>
@@ -121,14 +204,13 @@
                   <a class="social-button" href="https://www.youtube.com">
                   <img src="img/youtube.svg" width="20" height="16" alt="youtube"></a>
                 </li>
-          
             </ul>
-          
                 <div>
                   <p class="footer-copyright">Website by</p>
                   <a class="button" href="https://htmlacademy.ru">
                     <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HtmlAcademy"></a>
                 </div>
+          </section>
     
         </footer>
 
